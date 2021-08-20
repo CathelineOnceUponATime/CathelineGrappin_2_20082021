@@ -1,0 +1,217 @@
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+*
+{
+    font-family: 'Raleway';
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px/10px;
+}
+.titre-recherche
+{
+    display: flex;
+    flex-direction: column;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+}
+article
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+}
+nav
+{
+    overflow: auto;
+    width: 650px;
+    justify-content: right;
+}
+nav ul
+{
+    color:#0065FC;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+}
+nav li
+{
+    width: 25%;
+    text-align: center;
+}
+nav a 
+{
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: blue;
+}
+nav a#hebergements
+{
+    border-top: blue 2px solid;
+}
+nav a#activites
+{
+    color: gray;
+}
+figure
+{
+    background-color: white;
+    border-radius: 20px/10px;
+    box-shadow: 6px 6px 6px grey;
+    overflow: auto;
+    text-align: start;
+}
+figure:active
+{
+    color:springgreen;
+}
+img
+{
+    width: 250px;
+}
+.logo
+{
+    width: auto;
+}
+.haut
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.hebergements
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    border-radius: 20px/10px;
+    width: 65%;
+
+}
+.ensembleFigures
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.hebergements figure
+{
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 20px/10px;
+    width: 250px;
+}
+.populaires
+{
+    width: 30%;
+    background-color:#F2F2F2;
+    margin: 5px;
+    padding: 10px;
+}
+.populaires img
+{
+    width: 100px;
+    height: auto;
+}
+figure.legende-droite
+{
+    display: inline-flex; 
+    flex-direction : row; 
+    align-items : flex-end; 
+}
+figure figcaption
+{
+    margin-left: 15px;
+}
+form i
+{
+    border: 1px #DEEBFF outset;
+    background-color: #DEEBFF;
+    border-radius: 10px;
+}
+.rechercher
+{
+    background-color: #0065FC;
+    color: #F2F2F2;
+    overflow: auto;
+}
+.etoiles
+{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: flex-start;
+    width: 70%;
+}
+.unFiltre
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    border: 1px #F2F2F2 outset;
+    text-align: center;
+}
+.unFiltre i
+{
+    border: 1px #DEEBFF outset;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    height: auto;
+    width: 30px;
+}
+.unFiltre:hover
+{
+    background-color: blue;
+    color: white;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+}
+.propos
+{
+    display: flex;
+    flex-direction: column;
+}
+.hebergements-footer
+{
+    display: flex;
+    flex-direction: column;
+}
+.assistance
+{
+    display: flex;
+    flex-direction: column;
+}
+.activites
+{
+    display: flex;
+    flex-flow: row wrap;
+}
