@@ -215,3 +215,11 @@ footer
     display: flex;
     flex-flow: row wrap;
 }
+#etoileGrise
+{
+    color: rgb(207, 207, 207);
+}
+.fa-star
+{
+    color: blue;
+}
