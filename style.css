@@ -1,8 +1,3 @@
-@font-face 
-{
-    font-family: 'Raleway';
-    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
-}
 *
 {
     font-family: 'Raleway';
@@ -28,6 +23,8 @@ header
 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 article
 {
@@ -85,9 +82,14 @@ figure:active
 }
 img
 {
-    width: 250px;
+    width: 100%;
+    height: 100%;
 }
 .logo
+{
+    width: 100%;
+}
+.logo img 
 {
     width: auto;
 }
@@ -118,6 +120,17 @@ img
     flex-flow: row wrap;
     border-radius: 20px/10px;
     width: 250px;
+    height: 200px;
+    flex: 3 1 190px;
+}
+.hebergements figcaption
+{
+    height: 100px;
+}
+.hebergements img
+{
+    width: 250px;
+    height: 100px;
 }
 .populaires
 {
@@ -170,17 +183,20 @@ form i
 .unFiltre
 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     border-radius: 30px;
     border: 1px #F2F2F2 outset;
     text-align: center;
 }
 .unFiltre i
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px #DEEBFF outset;
     background-color: #DEEBFF;
     border-radius: 30px;
-    height: auto;
+    height: 30px;
     width: 30px;
 }
 .unFiltre:hover
@@ -215,11 +231,24 @@ footer
     display: flex;
     flex-flow: row wrap;
 }
-#etoileGrise
-{
-    color: rgb(207, 207, 207);
-}
-.fa-star
+.fas
 {
     color: blue;
+}
+.fa-map-marker-alt, .fa-chart-line
+{
+    color: black;
+}
+h2
+{
+    margin: 20px;
+}
+.populaires h2 i
+{
+    float: right;
+    margin-right: 40px;
+}
+.gris
+{
+    color: rgb(207, 207, 207);
 }
