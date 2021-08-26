@@ -2,56 +2,42 @@
 {
     font-family: 'Raleway';
 }
-section
-{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px/10px;
-}
-.titre-recherche
-{
-    display: flex;
-    flex-direction: column;
-}
+
+/* Header */
+
 header
 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.navigation
+/* logo */
+.logo
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
 }
-article
+.logo img 
 {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    padding: 10px;
+    width: auto;
 }
+
+/* barre de navigation */
+
 nav
 {
-    overflow: auto;
-    width: 650px;
     justify-content: right;
 }
-nav ul
-{
-    color:#0065FC;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0px;
-}
+
 nav li
 {
     width: 25%;
     text-align: center;
+}
+nav ul
+{
+    color:#0065FC;
+    list-style: none;
+    margin: 0px;
 }
 nav a 
 {
@@ -68,96 +54,16 @@ nav a#activites
 {
     color: gray;
 }
-figure
-{
-    background-color: white;
-    border-radius: 20px/10px;
-    box-shadow: 6px 6px 6px grey;
-    overflow: auto;
-    text-align: start;
-    border: 4px white solid;
-}
-figure:active
-{
-    color:springgreen;
-}
-img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.logo
-{
-    width: 100%;
-}
-.logo img 
-{
-    width: auto;
-}
-.haut
-{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-.hebergements
-{
-    display: flex;
-    flex-direction: column;
-    background-color:#F2F2F2;
-    border-radius: 20px/10px;
-    width: 65%;
 
-}
-.ensembleFigures
+/* titre principal */
+
+h1
 {
-    display: flex;
-    flex-flow: row wrap;
+    font-size: 26px;
 }
-.hebergements figure
-{
-    display: flex;
-    flex-flow: column wrap;
-    border-radius: 20px/10px;
-    width: 200px;
-    margin: 20px;
-}
-.hebergements figcaption
-{
-    height: 100px;
-}
-.hebergements h3
-{
-    margin: 0;
-    margin-top: 10px;
-}
-.hebergements img
-{
-    width: 200px;
-    height: 100px;
-}
-.populaires
-{
-    width: 30%;
-    background-color:#F2F2F2;
-    margin: 5px;
-    padding: 10px;
-}
-.populaires img
-{
-    width: 100px;
-    height: 100px;
-}
-figure.legende-droite
-{
-    display: flex; 
-    flex-direction : row; 
-}
-figure figcaption
-{
-    margin-left: 15px;
-}
+
+/* formulaire de recherche */
+
 form
 {
     display: flex;
@@ -174,7 +80,6 @@ form i
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     height: 30px;
-    width: 30px;
 }
 input
 {
@@ -186,6 +91,7 @@ input::placeholder
     font-weight: bolder;
     color: black;
 }
+/* bouton rechercher */
 .rechercher
 {
     background-color: #0065FC;
@@ -195,12 +101,9 @@ input::placeholder
     border-radius: 0 30px 30px 0;
     border: none;
 }
-.etoiles
-{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
+
+/* fin du formulaire de recherche */
+/* les filtres */
 .filtres
 {
     display: flex;
@@ -238,11 +141,140 @@ input::placeholder
     background-color: blue;
     color: white;
 }
-footer
+
+/* fin des filtres */
+/* fin du header */
+/* haut : regroupant populaires et hebergements */
+.haut
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+/* populaires */
+.populaires
+{
+    background-color:#F2F2F2;
+    margin: 5px;
+    padding: 10px;
+}
+.populaires img
+{
+    width: 100px;
+    height: 100px;
+}
+.populaires h2 i
+{
+    float: right;
+    margin-right: 40px;
+}
+/* figure légende droite dans populaires car dans cette section la legende est disposé à droite */
+figure.legende-droite
+{
+    display: flex; 
+    flex-direction : row; 
+}
+
+/* fin du populaires */
+/* hebergements */
+
+.hebergements
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    border-radius: 20px/10px;
+}
+.ensembleFigures
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+.hebergements figure
+{
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 20px/10px;
+    width: 200px;
+    margin: 20px;
+}
+.hebergements figcaption
+{
+    height: 100px;
+}
+.hebergements h3
+{
+    margin: 0;
+    margin-top: 10px;
+}
+.hebergements img
+{
+    width: 200px;
+    height: 100px;
+}
+
+/* fin des hebergements */
+/* activites */
+
+.activites
+{
+    display: flex;
+    flex-flow: column;
+}
+
+/* fin activites */
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px/10px;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+}
+
+figure
+{
+    background-color: white;
+    border-radius: 20px/10px;
+    box-shadow: 6px 6px 6px grey;
+    overflow: auto;
+    text-align: start;
+    border: 4px white solid;
+}
+figure:active
+{
+    color:springgreen;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure figcaption
+{
+    margin-left: 15px;
+}
+
+.etoiles
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: white;
+}
+
+/* footer */ 
+footer
+{
     background-color:#F2F2F2;
 }
 footer a
@@ -255,40 +287,8 @@ footer a
     display: flex;
     flex-direction: column;
 }
-.activites
-{
-    display: flex;
-    flex-flow: column;
-}
-.ensembleActivites
-{
-    display: flex;
-    flex-flow: row nowrap;
-}
-.activites figure
-{
-    width: 300px;
-    margin: 20px;
-}
-.activites img
-{
-    height: 660px;
-}
-.enColonne
-{
-    display: flex;
-    flex-direction: column;
-}
-.enColonne figure
-{
-    width: 300px;
-    height: 330px;
-}
-.enColonne img
-{
-    width: 300px;
-    height: 300px;
-}
+/* fin du footer */
+/* formatage des icones */
 .fas
 {
     color: blue;
@@ -297,15 +297,14 @@ footer a
 {
     color: black;
 }
+/* fin de formatage des icones */
+
 h2
 {
     margin: 20px;
+    font-size: 22px;
 }
-.populaires h2 i
-{
-    float: right;
-    margin-right: 40px;
-}
+
 .gris
 {
     color: rgb(207, 207, 207);
@@ -314,11 +313,128 @@ h3
 {
     font-size: 16px;
 }
-h2
+a
 {
-    font-size: 22px;
+    text-decoration: none;
 }
-h1
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
 {
-    font-size: 26px;
+    .menu
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .haut
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtres
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navigation
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul 
+    {   
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+@media all and (min-width: 1024px)
+{
+    .navigation
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .hebergements
+    {
+        width: 65%;
+    }
+    .populaires
+    {
+        width: 30%;
+    }
+    form i
+    {
+        width: 30px;
+    }
+    .filtres
+    {
+        width: 50%;
+    }
+    .unFiltre i
+    {
+        width: 30px;
+    }
+    .ensembleActivites
+    {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .activites figure
+    {
+        width: 300px;
+        margin: 20px;
+    }
+    .activites img
+    {
+        height: 660px;
+    }
+    .enColonne
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .enColonne figure
+    {
+        width: 300px;
+        height: 330px;
+    }
+    .enColonne img
+    {
+        width: 300px;
+        height: 300px;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color:#F2F2F2;
+    }
+    nav
+    {
+        overflow: auto;
+        width: 650px;
+        justify-content: right;
+    }
 }
