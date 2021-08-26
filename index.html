@@ -6,12 +6,12 @@
     <!--<meta name="viewport"   content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <link rel="icon" type="image/svg" sizes="16x16" href="./images/logo/Reservia.svg" />
-    
+
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style">
     <link rel="preload" href="style.css" as="style" />
-    <link rel="stylesheet" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css"  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+
     <meta name="description" content="Site Reservia - P2 - Formation Dev Front-End">
     <meta name="author" content="Catheline GRAPPIN">
 
@@ -20,20 +20,19 @@
 
 <body>
     <header>
-        <span class="navigation">
+        <nav class="navigation">
             <!-- Insertion du logo -->
             <span class="logo">
                 <img src="./images/logo/Reservia.svg" alt="Logo Reservia">
             </span>
             <!-- Barre de Navigation -->
-            <nav>
-                <ul>
-                    <li> <a id="hebergements" href="#hebergementsMarseille"> Hébergements </a></li>
-                    <li> <a id="activites" href="#activitesMarseille"> Activités </a></li>
-                    <li> <a id="inscription" href=""> S'inscrire </a></li>
-                </ul>
-            </nav>
-        </span>
+
+            <ul>
+                <li> <a id="hebergements" href="#hebergementsMarseille"> Hébergements </a></li>
+                <li> <a id="activites" href="#activitesMarseille"> Activités </a></li>
+                <li> <a id="inscription" href=""> S'inscrire </a></li>
+            </ul>
+        </nav>
         <!-- Titre principal -->
         <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
         <p> En plein centre ville ou en pleine nature </p>
@@ -68,7 +67,7 @@
             Plus de 500 logements sont disponibles dans cette ville
         </p>
     </header>
-    <span class="haut">
+    <aside class="haut">
         <section class="populaires">
             <h2> Les plus populaires <i class="fas fa-chart-line"></i> </h2>
             <a href="">
@@ -128,8 +127,8 @@
         <article id="hebergementsMarseille" class="hebergements">
             <h2> Hébergements à Marseille </h2>
             <section class="ensembleFigures">
-                <figure>
-                    <a href="">
+                <a href="">
+                    <figure>
                         <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Image Auberge la Cannebière">
                         <figcaption>
@@ -144,10 +143,10 @@
                                 <i class="fas fa-star gris"></i>
                             </span>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <img src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="Image Hôtel du port">
                         <figcaption>
@@ -162,10 +161,10 @@
                                 <i class="fas fa-star"></i>
                             </span>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <img src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                             alt="Image Hôtel les mouettes">
                         <figcaption>
@@ -180,10 +179,10 @@
                                 <i class="fas fa-star gris"></i>
                             </span>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <img src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                             alt="Image Hôtel de la mer">
                         <figcaption>
@@ -198,10 +197,11 @@
                                 <i class="fas fa-star gris"></i>
                             </span>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+
                         <img src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                             alt="Image Auberge Le Panier">
                         <figcaption>
@@ -216,10 +216,12 @@
                                 <i class="fas fa-star gris"></i>
                             </span>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+
                         <img src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                             alt="Image Hôtel chez Amina">
                         <figcaption>
@@ -233,77 +235,77 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </span>
-
                         </figcaption>
-                    </a>
-                </figure>
 
+                    </figure>
+                </a>
             </section>
             <p> Afficher plus </p>
         </article>
-    </span>
+    </aside>
     <article id="activitesMarseille" class="activites">
         <h2> Activités à Marseille </h2>
-        <span class="ensembleActivites">
-            <figure>
-                <a href="">
+        <aside class="ensembleActivites">
+            <a href="">
+                <figure>
                     <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Image Vieux Port">
                     <figcaption>
                         Vieux Port
                     </figcaption>
-                </a>
-            </figure>
-            <span class="enColonne">
-                <figure>
-                    <a href="">
+                </figure>
+            </a>
+
+            <aside class="en-colonne">
+                <a href="">
+                    <figure>
                         <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                             alt="Image Fort de Pomègues">
                         <figcaption>
                             Fort de Pomègues
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <img src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                             alt="Image Iles du Frioul">
                         <figcaption>
                             Iles du Frioul
                         </figcaption>
-                    </a>
-                </figure>
-            </span>
-            <figure>
-                <a href="">
+                    </figure>
+                </a>
+            </aside>
+            <a href="">
+                <figure>
                     <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         alt="Image Parc National des Calanques">
                     <figcaption>
                         Parc National des Calanques
                     </figcaption>
-                </a>
-            </figure>
-            <span class="enColonne">
-                <figure>
-                    <a href="">
+                </figure>
+            </a>
+            <aside class="en-colonne">
+                <a href="">
+                    <figure>
                         <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                             alt="Image Notre-Dame-de-la-Garde">
                         <figcaption>
                             Notre-Dame-de-la-Garde
                         </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                             alt="Image Parc Longchamp">
                         <figcaption>
                             Parc Longchamp
                         </figcaption>
-                    </a>
-                </figure>
-            </span>
-        </span>
+                    </figure>
+                </a>
+            </aside>
+        </aside>
     </article>
     <footer>
         <section class="propos">
