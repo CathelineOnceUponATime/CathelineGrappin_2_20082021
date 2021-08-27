@@ -3,6 +3,7 @@
 body
 {
     font-family : 'Raleway' ;
+    height: 100%;
 }
 
 /* Header */
@@ -12,6 +13,7 @@ header
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 20%;
 }
 /* logo */
 .logo
@@ -30,14 +32,14 @@ nav li
     width: 25%;
     text-align: center;
 }
-ul
+nav ul
 {
     justify-content: right;
     color:#0065FC;
     list-style: none;
     margin: 0px;
 }
-ul a 
+nav ul a 
 {
     display: block;
     padding: 10px 0px;
@@ -110,12 +112,16 @@ input::placeholder
     align-self: flex-start;
     width: 50%;
 }
+.filtres h2
+{
+    font-size: 16px;
+}
 .filtres h3
 {
     display: flex;
     align-items: center;
 }
-.unFiltre
+.un-filtre
 {
     display: flex;
     align-items: center;
@@ -123,7 +129,7 @@ input::placeholder
     border: 3px #F2F2F2 solid;
     text-align: center;
 }
-.unFiltre i
+.un-filtre i
 {
     display: flex;
     align-items: center;
@@ -134,7 +140,7 @@ input::placeholder
     height: 30px;
     width: 30px;
 }
-.unFiltre:hover
+.un-filtre:hover
 {
     background-color: blue;
     color: white;
@@ -148,6 +154,8 @@ input::placeholder
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin: 0;
+    height: 40%;
 }
 /* populaires */
 .populaires
@@ -183,12 +191,12 @@ figure.legende-droite
     background-color:#F2F2F2;
     border-radius: 20px/10px;
 }
-.ensembleFigures
+.ensemble-figures
 {
     display: flex;
     flex-flow: row wrap;
 }
-.hebergements figure
+.hebergements .hotel
 {
     display: flex;
     flex-flow: column wrap;
@@ -218,8 +226,47 @@ figure.legende-droite
 {
     display: flex;
     flex-flow: column;
+    height: 30%;
+}
+.ensemble-activites
+{
+    height: 100%;
+}
+.ensemble-activites .hotel
+{
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+.ensemble-activites a
+{
+    width: 25%;
+    min-width: 25%;
+}
+.agrandi
+{
+    height: 100%;
+}
+.frioul, .notre-dame
+{
+    height: 30%;
 }
 
+.ensemble-activites figcaption
+{
+    height: 10%;
+}
+.ensemble-activites img
+{
+    height: 90%;
+}
+.en-colonne
+{
+    margin: 0%;
+}
+.activites img
+{
+    width: 100%;
+}
 /* fin activites */
 
 section
@@ -237,7 +284,7 @@ article
     padding: 10px;
 }
 
-figure
+.hotel
 {
     background-color: white;
     border-radius: 20px/10px;
@@ -262,7 +309,7 @@ figure figcaption
 {
     margin-left: 15px;
 }
-figure a 
+.hotel a
 {
     display: block;
     width: 100%;
@@ -273,12 +320,14 @@ figure a
     display: flex;
     flex-direction: row;
     background-color: white;
+    margin: 0;
 }
 
 /* footer */ 
 footer
 {
     background-color:#F2F2F2;
+    height: 10%;
 }
 footer a
 {
@@ -362,7 +411,7 @@ a
         flex-direction: column-reverse;
         justify-content: center;
     }
-    figure 
+    .hotel 
     {
         width: 100%;
         margin: 0 0 10px 0 ;
@@ -405,33 +454,18 @@ a
     {
         width: 30px;
     }
-    .ensembleActivites
+    .ensemble-activites
     {
         display: flex;
         flex-flow: row nowrap;
     }
     .activites figure
     {
-        width: 300px;
         margin: 20px;
-    }
-    .activites img
-    {
-        height: 660px;
     }
     .en-colonne
     {
         flex-direction: column;
-    }
-    .en-colonne figure
-    {
-        width: 300px;
-        height: 330px;
-    }
-    .en-colonne img
-    {
-        width: 300px;
-        height: 300px;
     }
     footer
     {
