@@ -25,12 +25,12 @@
             <!-- Insertion du logo -->
             <figure class="logo">
                 <img src="./images/logo/Reservia.svg" alt="Logo Reservia">
-            </figures>
+            </figure>
             <!-- Barre de Navigation -->
 
             <ul>
-                <li> <a id="hebergements" href="#hebergementsMarseille"> Hébergements </a></li>
-                <li> <a id="activites" href="#activitesMarseille"> Activités </a></li>
+                <li class="nav-mobile"> <a id="hebergements" href="#hebergementsMarseille"> Hébergements </a></li>
+                <li class="nav-mobile"> <a id="activites" href="#activitesMarseille"> Activités </a></li>
                 <li> <a id="inscription" href=""> S'inscrire </a></li>
             </ul>
         </nav>
@@ -40,7 +40,10 @@
         <form>
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" name="Ville" placeholder="Marseille, France" />
-            <input class="rechercher" type="submit" value="Rechercher" />
+            <button>
+                <span id="rechercher"> Rechercher </span>
+                <span id="loupe" > <i class="fas fa-search"></i> </span>
+            </button>     
         </form>
         <!-- Filtres -->
         <section class="filtres">
@@ -259,7 +262,7 @@
 
             <figure class="en-colonne equivalent">
                 <a href="">
-                    <figure class="hotel">
+                    <figure class="hotel pomegues">
                         <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                             alt="Image Fort de Pomègues">
                         <figcaption>
@@ -297,7 +300,7 @@
                     </figure>
                 </a>
                 <a href="">
-                    <figure class="hotel">
+                    <figure class="hotel longchamp">
                         <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                             alt="Image Parc Longchamp">
                         <figcaption>

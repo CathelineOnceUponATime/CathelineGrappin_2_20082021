@@ -3,7 +3,9 @@
 body
 {
     font-family : 'Raleway' ;
-    height: 100%;
+    height: 100vh;
+    margin: 0;
+    
 }
 
 /* Header */
@@ -13,7 +15,8 @@ header
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 20%;
+    /*height: 23vh; */
+    overflow: scroll;
 }
 /* logo */
 .logo
@@ -79,11 +82,11 @@ form i
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
-    height: 30px;
+    height: 40px;
 }
 input
 {
-    height: 30px;
+    height: 40px;
     border: 2px #F2F2F2 solid;
 }
 input::placeholder
@@ -92,14 +95,20 @@ input::placeholder
     color: black;
 }
 /* bouton rechercher */
-.rechercher
+button
 {
     background-color: #0065FC;
     color: #F2F2F2;
     overflow: auto;
-    height: 30px;
+    height: 40px;
     border-radius: 0 30px 30px 0;
     border: none;
+}
+button i
+{
+    background-color: #0065FC;
+    border-radius: 0;
+    height: 40px;
 }
 
 /* fin du formulaire de recherche */
@@ -155,7 +164,9 @@ input::placeholder
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 0;
-    height: 40%;
+    /*height: 36vh;*/
+    overflow: scroll;
+    object-fit: cover;
 }
 /* populaires */
 .populaires
@@ -226,7 +237,8 @@ figure.legende-droite
 {
     display: flex;
     flex-flow: column;
-    height: 100%;
+    /*height: 30vh;*/
+    overflow: scroll;
 }
 .ensemble-activites
 {
@@ -234,7 +246,7 @@ figure.legende-droite
 }
 .ensemble-activites .hotel
 {
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
     width: 100%;
 }
 .equivalent
@@ -249,7 +261,10 @@ figure.legende-droite
 {
     height: 30%;
 }
-
+.pomegues, .longchamp
+{
+    height: 60%;
+}
 .ensemble-activites figcaption
 {
     height: 10%;
@@ -327,7 +342,7 @@ figure figcaption
 footer
 {
     background-color:#F2F2F2;
-    height: 10%;
+    /*height: 11vh;*/
 }
 footer a
 {
@@ -348,6 +363,15 @@ footer a
 .fa-map-marker-alt, .fa-chart-line
 {
     color: black;
+}
+.fa-map-marker-alt
+{
+    display: flex;
+}
+.fa-search
+{
+    color: white;
+    display: flex;
 }
 /* fin de formatage des icones */
 
@@ -416,9 +440,32 @@ a
         width: 100%;
         margin: 0 0 10px 0 ;
     }
+    .nav-mobile
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #inscription
+    {
+        position: absolute;
+    }
+    #loupe
+    {
+        display: block;
+        font-size: 16px;
+    }
+    #rechercher
+    {
+        display: none;
+    }
 }
 @media all and (min-width: 1024px)
 {
+    #loupe
+    {
+        display: none;
+    }
     .navigation
     {
         display: flex;
