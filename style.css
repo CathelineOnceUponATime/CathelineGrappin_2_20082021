@@ -3,7 +3,6 @@
 body
 {
     font-family : 'Raleway' ;
-    height: 100vh;
     margin: 0;
     
 }
@@ -15,8 +14,6 @@ header
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*height: 23vh; */
-    overflow: scroll;
 }
 /* logo */
 .logo
@@ -176,9 +173,6 @@ button i
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 0;
-    /*height: 36vh;*/
-    overflow: scroll;
-    object-fit: cover;
 }
 /* populaires */
 .populaires
@@ -190,15 +184,14 @@ button i
 .populaires img
 {
     width: 100px;
-    height: 100px;
 }
 .populaires h2 i
 {
     float: right;
     margin-right: 40px;
 }
-/* figure légende droite dans populaires car dans cette section la legende est disposé à droite */
-figure.legende-droite
+/* légende droite dans populaires car dans cette section la legende est disposé à droite */
+.legende-droite
 {
     display: flex; 
     flex-direction : row; 
@@ -212,7 +205,7 @@ figure.legende-droite
     display: flex;
     flex-direction: column;
     background-color:#F2F2F2;
-    border-radius: 20px/10px;
+    border-radius: 20px;
 }
 .ensemble-figures
 {
@@ -223,13 +216,9 @@ figure.legende-droite
 {
     display: flex;
     flex-flow: column wrap;
-    border-radius: 20px/10px;
+    border-radius: 20px;
     width: 200px;
     margin: 20px;
-}
-.hebergements figcaption
-{
-    height: 100px;
 }
 .hebergements h3
 {
@@ -239,7 +228,6 @@ figure.legende-droite
 .hebergements img
 {
     width: 200px;
-    height: 100px;
 }
 
 /* fin des hebergements */
@@ -249,8 +237,6 @@ figure.legende-droite
 {
     display: flex;
     flex-flow: column;
-    /*height: 30vh;*/
-    overflow: scroll;
 }
 .ensemble-activites
 {
@@ -277,10 +263,6 @@ figure.legende-droite
 {
     height: 60%;
 }
-.ensemble-activites figcaption
-{
-    height: 10%;
-}
 .ensemble-activites img
 {
     height: 90%;
@@ -299,7 +281,7 @@ section
 {
     display: flex;
     flex-direction: column;
-    border-radius: 20px/10px;
+    border-radius: 20px;
 }
 
 article
@@ -313,7 +295,7 @@ article
 .hotel
 {
     background-color: white;
-    border-radius: 20px/10px;
+    border-radius: 20px;
     box-shadow: 6px 6px 6px grey;
     overflow: auto;
     text-align: start;
@@ -332,7 +314,7 @@ img
     object-fit: cover;
 }
 
-figure figcaption
+p
 {
     margin-left: 15px;
 }
