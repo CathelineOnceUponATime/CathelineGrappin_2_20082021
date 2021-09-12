@@ -188,7 +188,7 @@ button i
 }
 .populaires img
 {
-    width: 100px;
+    width: 40%;
 }
 .populaires h2 i
 {
@@ -199,7 +199,8 @@ button i
 .legende-droite
 {
     display: flex; 
-    flex-direction : row; 
+    flex-direction : row;
+    height: 100%; 
 }
 
 /* fin du populaires */
@@ -212,7 +213,7 @@ button i
     background-color:#F2F2F2;
     border-radius: 20px;
 }
-.ensemble-figures
+.ensemble-hebergements
 {
     display: flex;
     flex-flow: row wrap;
@@ -231,34 +232,9 @@ button i
     display: flex;
     flex-flow: column;
 }
-.ensemble-activites
-{
-    height: 100%;
-}
-.ensemble-activites .hotel
-{
-    margin: 10px 0 10px 0;
-    width: 100%;
-}
 .equivalent
 {
     width: 25%;
-}
-.agrandi
-{
-    height: 100%;
-}
-.frioul, .notre-dame
-{
-    height: 30%;
-}
-.pomegues, .longchamp
-{
-    height: 60%;
-}
-.ensemble-activites img
-{
-    height: 90%;
 }
 .en-colonne
 {
@@ -281,21 +257,16 @@ article
 {
     display: flex;
     flex-direction: column;
-}
-
-.hotel
-{
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 6px grey;
     overflow: auto;
     text-align: start;
     border: 4px white solid;
-    
 }
-.hotel:active
+article:active
 {
-    color:springgreen;
+    color: green;
 }
 
 img
@@ -368,10 +339,10 @@ a
 {
     text-decoration: none;
 }
-.ensemble-figures a 
+.ensemble-hebergements a 
 {
     width: 30%;
-    margin: 15px;
+    margin: 1%;
 }
 
 .info
@@ -379,6 +350,17 @@ a
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.ensemble-populaires
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.ensemble-populaires a
+{
+    height: 30%;
+    margin: 5%;
 }
 
 /* Sur tous types d'écrans orientés verticalement */
@@ -411,11 +393,6 @@ a
     {
         display: flex;
         flex-direction: column;
-    }
-    .hotel 
-    {
-        width: 100%;
-        margin: 0 0 10px 0 ;
     }
     .nav-mobile
     {
