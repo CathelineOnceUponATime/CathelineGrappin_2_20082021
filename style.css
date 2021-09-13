@@ -149,11 +149,11 @@ button i
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px #DEEBFF outset;
+    border: 1px #424d5f outset;
     background-color: #DEEBFF;
     border-radius: 30px;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 }
 .un-filtre:hover
 {
@@ -216,7 +216,9 @@ button i
 .ensemble-hebergements
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85%;
 }
 .hebergements h3
 {
@@ -231,14 +233,12 @@ button i
 {
     display: flex;
     flex-flow: column;
+    height: 100%;
 }
 .equivalent
 {
     width: 25%;
-}
-.en-colonne
-{
-    margin: 0;
+    margin: 20px;
 }
 .activites img
 {
@@ -260,7 +260,7 @@ article
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 6px grey;
-    overflow: auto;
+    overflow: hidden;
     text-align: start;
     border: 4px white solid;
 }
@@ -319,6 +319,13 @@ footer a
     color: white;
     display: flex;
 }
+.fa-info
+{
+    font-size: 54px;
+    border-radius: 50%;
+    border: 10px solid rgb(205, 209, 215);
+    padding: 30px;
+}
 /* fin de formatage des icones */
 
 h2
@@ -343,6 +350,19 @@ a
 {
     width: 30%;
     margin: 1%;
+    height: 50%;
+}
+.ensemble-hebergements img
+{
+    height: 75%;
+}
+.ensemble-hebergements article
+{
+    height: 100%;
+}
+.hebergements p
+{
+    margin-top: 5%;
 }
 
 .info
@@ -361,6 +381,27 @@ a
 {
     height: 30%;
     margin: 5%;
+}
+.agrandi
+{
+    height: 100%;
+}
+.pomegues, .longchamp
+{
+    height: 65%;
+}
+.frioul, .notre-dame
+{
+    height: 35%;
+}
+footer p
+{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.ensemble-activites
+{
+    height: 100%;
 }
 
 /* Sur tous types d'écrans orientés verticalement */
@@ -463,11 +504,6 @@ a
         display: flex;
         flex-flow: row nowrap;
     }
-    .equivalent
-    {
-        margin: 0 20px 0 20px;
-    }
-
     .en-colonne
     {
         flex-direction: column;
