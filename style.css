@@ -149,7 +149,6 @@ button i
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px #424d5f outset;
     background-color: #DEEBFF;
     border-radius: 30px;
     height: 50px;
@@ -235,11 +234,7 @@ button i
     flex-flow: column;
     height: 100%;
 }
-.equivalent
-{
-    width: 25%;
-    margin: 20px;
-}
+
 .activites img
 {
     width: 100%;
@@ -405,7 +400,7 @@ footer p
 }
 
 /* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
+@media all and (max-width: 800px)
 {
     .menu
     {
@@ -456,6 +451,24 @@ footer p
     #rechercher
     {
         display: none;
+    }
+    .ensemble-hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .ensemble-hebergements a 
+    {
+        width: 90%;
+    }
+    .ensemble-activites a
+    {
+        margin: 10px;
+        width:  30%;
+    }
+    .en-colonne a
+    {
+        height: 30%;
     }
 }
 @media all and (min-width: 1024px)
@@ -514,5 +527,10 @@ footer p
         flex-direction: row;
         justify-content: space-between;
         background-color:#F2F2F2;
+    }
+    .equivalent
+    {
+        width: 25%;
+        margin: 20px;
     }
 }
