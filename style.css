@@ -283,7 +283,6 @@ img
 footer
 {
     background-color:#F2F2F2;
-    /*height: 11vh;*/
 }
 footer a
 {
@@ -316,10 +315,10 @@ footer a
 }
 .fa-info
 {
-    font-size: 54px;
+    font-size: 12px;
     border-radius: 50%;
-    border: 10px solid rgb(205, 209, 215);
-    padding: 30px;
+    border: 2px solid rgb(205, 209, 215);
+    padding: 7px;
 }
 /* fin de formatage des icones */
 
