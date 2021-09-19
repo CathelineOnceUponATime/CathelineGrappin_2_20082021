@@ -19,6 +19,7 @@ header
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 30px;
 }
 /* logo */
 .logo
@@ -79,12 +80,17 @@ nav ul a
     position: relative;
     color : var(--color-bleu);
 }
-
+#inscription
+{
+    color: var(--color-bleu);
+    font-weight: bolder;
+}
 /* titre principal */
 
 h1
 {
     font-size: 26px;
+    margin-bottom: 0;
 }
 
 /* formulaire de recherche */
@@ -111,20 +117,20 @@ form i
 input
 {
     height: 50px;
+    width: 230px;
     border: 2px var(--color-gris) solid;
 }
 input::placeholder
 {
-    margin-right: 5px;
     font-size: 15px;
     font-weight: bolder;
     color: black;
+    padding-left: 10px;
 }
 .fa-map-marker-alt
 {
     display: flex;
     width: 50px;
-    margin-left: 10px;
 }
 /* bouton rechercher */
 button
@@ -173,10 +179,13 @@ button i
     text-align: center;
     height: 50px;
     margin-right: 20px;
+    font-weight: bolder;
+    padding-right: 15px;
 }
 .un-filtre p 
 {
     margin: 0;
+    padding-left: 15px;
 }
 .un-filtre i
 {
@@ -221,12 +230,14 @@ button i
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 0;
+    margin-left: 30px;
 }
 /* populaires */
 .populaires
 {
     background-color: var(--color-gris);
     width: 30%;
+    margin-right: 30px;
 }
 .populaires img
 {
@@ -235,7 +246,7 @@ button i
 .populaires h2 i
 {
     float: right;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 .ensemble-populaires
 {
@@ -247,7 +258,10 @@ button i
     height: 150px;
     margin: 25px;
 }
-
+.populaires h2
+{
+    margin-left: 25px;
+}
 /* légende droite dans populaires car dans cette section la legende est disposé à droite */
 .legende-droite
 {
@@ -281,11 +295,6 @@ button i
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.hebergements h3
-{
-    margin: 0;
-    margin-top: 10px;
-}
 .ensemble-hebergements a 
 {
     width: 30%;
@@ -297,7 +306,16 @@ button i
 }
 .hebergements p
 {
-    margin-top: 5%;
+    margin : 10px 0px;
+}
+.hebergements .afficher
+{
+    margin: 25px;
+    font-weight: bolder;
+}
+.hebergements h2
+{
+    margin-left: 25px;
 }
 
 /* fin des hebergements */
@@ -317,6 +335,7 @@ button i
 {
     display: flex;
     flex-flow: column;
+    margin: 0px 15px;
 }
 .activites article
 {
@@ -373,7 +392,7 @@ article
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 6px 6px 6px var(--color-bleu-clair);
+    box-shadow: 6px 6px 6px rgb(218, 216, 216);
     overflow: hidden;
     text-align: start;
     border: 4px white solid;
@@ -466,6 +485,7 @@ h2
 h3
 {
     font-size: 16px;
+    font-weight: bolder;
 }
 a
 {
@@ -485,6 +505,7 @@ a
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-left: 0px;
     }
     .filtres
     {
@@ -502,7 +523,8 @@ a
     {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 0px 30px;
+        margin-top: 50px;
     }
     .nav-mobile
     {
@@ -510,7 +532,6 @@ a
         top: 50px;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
     #inscription
     {
@@ -553,15 +574,19 @@ a
     .populaires
     {
         width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
     }
     .hebergements
     {
         width: 100%;
+        background-color: white;
     }
     .ensemble-activites
     {
         flex-direction: column;
         flex-wrap: nowrap;
+        margin: 0px 15px;
     }
     .equivalent
     {
@@ -570,10 +595,18 @@ a
     .un-filtre
     {
         margin-bottom: 20px;
+        margin-right: 5px;
+        padding-right: 10px;
     }
+    .un-filtre p
+    {
+        padding-left: 10px;
+    }
+
     form
     {
-        width: 100%;
+        width: 90%;
+        margin: 0px 15px
     }
     .fa-map-marker-alt
     {
@@ -589,5 +622,33 @@ a
         width: 15%;
         border-radius: 10px;
     }
-
+    header
+    {
+        margin-left: 0px;
+    }
+    .activites 
+    {
+        margin: 0;
+    }
+    .activites img 
+    {
+        height: 135px;
+    }
+    .activites a 
+    {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .pomegues, .notre-dame
+    {
+        margin: 0;
+    }
+    .frioul, .notre-dame, .pomegues
+    {
+        margin-bottom: 30px;
+    }
+    .ensemble-populaires a 
+    {
+        margin: 10px 20px;
+    }
 }
