@@ -157,7 +157,6 @@ button i
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    /*width: 50%;*/
     margin: 30px 0px;
 }
 .filtres h2
@@ -398,7 +397,11 @@ article
 }
 article:active
 {
-    color: green;
+    -webkit-transform:scale(1.15); /* Safari et Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* Internet Explorer 9 */
+    -o-transform:scale(1.15); /* Opera */
+    transform:scale(1.15);
 }
 
 img
