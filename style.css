@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 /* Déclarations de variables */
 :root 
 {
@@ -8,7 +9,7 @@
 }
 body
 {
-    font-family : 'Raleway' ;
+    font-family : 'Raleway', 'sans-serif' ;
     margin: 0;
 }
 
@@ -47,7 +48,6 @@ nav
 {
     justify-content: space-evenly;
     width: 100%;
-    height: 50px;
     padding: 0;
 }
 nav li
@@ -493,7 +493,7 @@ a
 }
 
 /* Pour les mobiles */
-@media all and (max-width: 800px)
+@media all and (max-width: 700px)
 {
     .menu
     {
@@ -513,31 +513,12 @@ a
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .navigation
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
     footer
     {
         display: flex;
         flex-direction: column;
         padding: 0px 30px;
         margin-top: 50px;
-    }
-    .nav-mobile
-    {
-        position: absolute;
-        top: 50px;
-        justify-content: center;
-        align-items: center;
-    }
-    #inscription
-    {
-        position: absolute;
-        top: 25px;
-        right: 15px;
     }
     #loupe
     {
@@ -651,4 +632,54 @@ a
     {
         margin: 10px 20px;
     }
+    .navbar, nav li, .nav ul, .nav-mobile
+    {
+        width: auto;
+        display: contents;
+    }
+    .navigation
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "logo inscription"
+        "logo inscription"
+        "hebergement activite"
+        ;
+    }
+    .logo
+    {
+        grid-area: logo;
+        width: auto;
+        margin-left: 20px;
+    }
+    .hebergement
+    {
+        grid-area: hebergement;
+    }
+    .activite
+    {
+        grid-area: activite;
+    }
+    .inscription
+    {
+        grid-area: inscription;
+        margin-left: 50px;
+    }
+    #hebergements:hover, #activites:hover
+    {
+        border-bottom: var(--color-bleu) 2px solid;
+        border-top: none;
+        position: relative;
+        color : var(--color-bleu);
+    }
+    #hebergements, #activites
+    {
+        border-bottom: var(--color-gris) 2px solid;
+        border-top: none;
+        position: relative;
+        color : black;
+    }
+
 }
