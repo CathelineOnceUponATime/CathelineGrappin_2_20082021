@@ -52,7 +52,6 @@ nav
 }
 nav li
 {
-    width: 25%;
     text-align: center;
 }
 nav ul
@@ -467,7 +466,6 @@ footer p
     align-items: center;
     justify-content: center;
     margin: 0px 15px 0px 15px;
-    /* padding: 7px 11px 7px 11px; */
 
 }
 /* fin de formatage des icones */
@@ -512,6 +510,7 @@ a
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 5px;
     }
     footer
     {
@@ -556,6 +555,9 @@ a
     {
         width: 100%;
         margin-right: 0px;
+    }
+    .ensemble-populaires
+    {
         margin-bottom: 20px;
     }
     .hebergements
@@ -576,7 +578,7 @@ a
     .un-filtre
     {
         margin-bottom: 20px;
-        margin-right: 5px;
+        margin-right: 3px;
         padding-right: 10px;
     }
     .un-filtre p
@@ -681,5 +683,100 @@ a
         position: relative;
         color : black;
     }
-
+    section 
+    {
+        border-radius: 0px;
+    }
+    h1, header p
+    {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 700px) and (max-width: 1100px)
+{
+    .haut
+    {
+        flex-direction:  column;
+        margin-left: 0;
+    }
+    header 
+    {
+        margin-left: 15px;
+    }
+    .ensemble-filtres
+    {
+        flex-wrap: wrap;
+    }
+    .populaires
+    {
+        width: 100%;
+    }
+    .ensemble-populaires
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .legende-droite
+    {
+        flex-direction: column;
+    }
+    .ensemble-populaires a 
+    {
+        height: 100%;
+        width: 30%;
+        margin: 15px;
+    }
+    .ensemble-populaires img 
+    {
+        width: 100%;
+        height: 100px;
+    }
+    .description-sans-etoiles
+    {
+        height: 50%;
+    }
+    .un-filtre
+    {
+        margin-bottom: 20px;
+    }
+    button
+    {
+        width: 115px;
+    }
+    .hebergements
+    {
+        width: 100%;
+        background-color: white;
+    }
+    .ensemble-hebergements a 
+    {
+        width: 45%;
+    }
+    section 
+    {
+        border-radius: 0px;
+    }
+    .populaires h2, .hebergements h2, .activites h2
+    {
+        text-align: center;
+    }
+    .ensemble-activites
+    {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .equivalent
+    {
+        width: 47%;
+        margin-bottom: 15px;
+    }
+    .en-colonne
+    {
+        flex-direction: row;
+    }
+    footer
+    {
+        padding: 30px;
+    }
 }
