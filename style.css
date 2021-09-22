@@ -71,6 +71,9 @@ nav ul a
     display: block;
     padding: 15px 0px;
     text-decoration: none;
+}
+nav ul a:visited
+{
     color: grey;
 }
 #hebergements:hover, #activites:hover
