@@ -1,5 +1,8 @@
+/* Déclarations des polices */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 /* Déclarations de variables */
 :root 
 {
@@ -264,7 +267,7 @@ button i
 {
     margin-left: 25px;
 }
-/* légende droite dans populaires car dans cette section la legende est disposé à droite */
+/* légende droite dans populaires car dans cette section la legende est disposée à droite */
 .legende-droite
 {
     display: flex; 
@@ -382,7 +385,7 @@ button i
     height: 140px;
 }
 /* fin activites */
-
+/* Personnalisation globales */
 section
 {
     display: flex;
@@ -419,7 +422,6 @@ img
     height: 100%;
     object-fit: cover;
 }
-
 .etoiles
 {
     display: flex;
@@ -487,7 +489,6 @@ h2
     margin: 20px;
     font-size: 22px;
 }
-
 .gris
 {
     color: var(--color-gris);
@@ -505,146 +506,15 @@ a
 /* Pour les mobiles */
 @media all and (max-width: 700px)
 {
-    .menu
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-    .haut
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: 0px;
-    }
-    .filtres
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 5px;
-    }
-    footer
-    {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 30px;
-        margin-top: 50px;
-    }
-    #loupe
-    {
-        display: block;
-        font-size: 16px;
-    }
-    #rechercher
-    {
-        display: none;
-    }
-    .ensemble-hebergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .ensemble-hebergements a 
-    {
-        width: 90%;
-    }
-    .ensemble-activites a
-    {
-        margin: 10px;
-        width:  100%;
-    }
-    button
-    {
-        width: 50px;
-    }
-    .ensemble-filtres
-    {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .populaires
-    {
-        width: 100%;
-        margin-right: 0px;
-    }
-    .ensemble-populaires
-    {
-        margin-bottom: 20px;
-    }
-    .hebergements
-    {
-        width: 100%;
-        background-color: white;
-    }
-    .ensemble-activites
-    {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0px 15px;
-    }
-    .equivalent
-    {
-        width: 100%;
-    }
-    .un-filtre
-    {
-        margin-bottom: 20px;
-        margin-right: 3px;
-        padding-right: 10px;
-    }
-    .un-filtre p
-    {
-        padding-left: 10px;
-    }
-
-    form
-    {
-        width: 90%;
-        margin: 0px 15px
-    }
-    .fa-map-marker-alt
-    {
-        width: 20%;
-    }
-    input 
-    {
-        width: 70%;
-        border-right: 0;
-    }
-    button
-    {
-        width: 15%;
-        border-radius: 10px;
-    }
     header
     {
         margin-left: 0px;
     }
-    .activites 
+    /* début du menu */
+    .menu
     {
-        margin: 0;
-    }
-    .activites img 
-    {
-        height: 135px;
-    }
-    .activites a 
-    {
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .pomegues, .notre-dame
-    {
-        margin: 0;
-    }
-    .frioul, .notre-dame, .pomegues
-    {
-        margin-bottom: 30px;
-    }
-    .ensemble-populaires a 
-    {
-        margin: 10px 20px;
+        display: flex;
+        justify-content: space-between;
     }
     .navbar, nav li, .nav ul, .nav-mobile
     {
@@ -695,6 +565,137 @@ a
         position: relative;
         color : black;
     }
+    /* Fin du menu */
+    /* début des filtres */
+    .filtres
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5px;
+    }
+    .ensemble-filtres
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .un-filtre
+    {
+        margin-bottom: 20px;
+        margin-right: 3px;
+        padding-right: 10px;
+    }
+    .un-filtre p
+    {
+        padding-left: 10px;
+    }
+    /* fin des filtres */
+    /* début du formulaire de recherche */
+    #loupe
+    {
+        display: block;
+        font-size: 16px;
+    }
+    #rechercher
+    {
+        display: none;
+    }
+    form
+    {
+        width: 90%;
+        margin: 0px 15px
+    }
+    .fa-map-marker-alt
+    {
+        width: 20%;
+    }
+    input 
+    {
+        width: 70%;
+        border-right: 0;
+    }
+    button
+    {
+        width: 15%;
+        border-radius: 10px;
+    }
+    /* fin du formulaire de recherche */
+    .haut
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0px;
+    }
+    /* début des hebergements */ 
+    .ensemble-hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .ensemble-hebergements a 
+    {
+        width: 90%;
+    }
+    .hebergements
+    {
+        width: 100%;
+        background-color: white;
+    }
+    /* fin des hebergements */
+    /* début des populaires */
+    .populaires
+    {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .ensemble-populaires
+    {
+        margin-bottom: 20px;
+    }
+    .ensemble-populaires a 
+    {
+        margin: 10px 20px;
+    }
+    /* fin des populaires */
+    /* début des activites */
+    .activites 
+    {
+        margin: 0;
+    }
+    .activites img 
+    {
+        height: 135px;
+    }
+    .activites a 
+    {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .pomegues, .notre-dame
+    {
+        margin: 0;
+    }
+    .frioul, .notre-dame, .pomegues
+    {
+        margin-bottom: 30px;
+    }
+    .ensemble-activites
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0px 15px;
+    }
+    .equivalent
+    {
+        width: 100%;
+    }
+    .ensemble-activites a
+    {
+        margin: 10px;
+        width:  100%;
+    }
+    /* fin des activites */
     section 
     {
         border-radius: 0px;
@@ -703,23 +704,36 @@ a
     {
         margin-left: 10px;
     }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+        margin-top: 50px;
+    }
 }
 /* Version tablette */
 @media (min-width: 700px) and (max-width: 1100px)
 {
-    .haut
-    {
-        flex-direction:  column;
-        margin-left: 0;
-    }
     header 
     {
         margin-left: 15px;
     }
+    button
+    {
+        width: 115px;
+    }
+    /* début des filtres */
     .ensemble-filtres
     {
         flex-wrap: wrap;
     }
+    .un-filtre
+    {
+        margin-bottom: 20px;
+    }
+    /* fin des filtres */
+    /* début des populaires */
     .populaires
     {
         width: 100%;
@@ -750,31 +764,13 @@ a
     {
         height: 50%;
     }
-    .un-filtre
+    /* fin des populaires*/
+    .haut
     {
-        margin-bottom: 20px;
+        flex-direction:  column;
+        margin-left: 0;
     }
-    button
-    {
-        width: 115px;
-    }
-    .hebergements
-    {
-        width: 100%;
-        background-color: white;
-    }
-    .ensemble-hebergements a 
-    {
-        width: 45%;
-    }
-    section 
-    {
-        border-radius: 0px;
-    }
-    .populaires h2, .hebergements h2, .activites h2
-    {
-        text-align: center;
-    }
+    /* début des activités */
     .ensemble-activites
     {
         margin-top: 20px;
@@ -788,6 +784,27 @@ a
     .en-colonne
     {
         flex-direction: row;
+    }
+    /* fin des activités */
+    /* début des hebergements */
+    .hebergements
+    {
+        width: 100%;
+        background-color: white;
+    }
+    .ensemble-hebergements a 
+    {
+        width: 45%;
+    }
+    /* fin des hebergements */ 
+    
+    .populaires h2, .hebergements h2, .activites h2
+    {
+        text-align: center;
+    }
+    section 
+    {
+        border-radius: 0px;
     }
     footer
     {
