@@ -409,7 +409,10 @@ article:active
     -o-transform:scale(1.15); /* Opera */
     transform:scale(1.15);
 }
-
+article:hover
+{
+    cursor: pointer;
+}
 img
 {
     width: 100%;
