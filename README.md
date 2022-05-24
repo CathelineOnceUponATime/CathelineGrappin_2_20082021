@@ -17,6 +17,8 @@ https://github.com/CathelineOnceUponATime/CathelineGrappin_2_20082021
 
 ## Resources provided
 
+![maquette-desktop](https://github.com/CathelineOnceUponATime/CathelineGrappin_2_20082021/blob/main/images/maquettes/Maquette%20-%20Desktop.png?raw=true)
+![maquette-mobile](https://github.com/CathelineOnceUponATime/CathelineGrappin_2_20082021/blob/main/images/maquettes/Maquette%20-%20Mobile.png?raw=true)
 
 ## Installation
 
