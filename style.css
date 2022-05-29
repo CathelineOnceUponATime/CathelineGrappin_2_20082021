@@ -213,6 +213,7 @@ button i
 .description
 {
     margin-left: 15px;
+    height: 100%;
 }
 .info
 {
@@ -276,10 +277,6 @@ button i
 .description-sans-etoiles
 {
     height: 65%;
-}
-.description 
-{
-    height: 100%;
 }
 /* fin du populaires */
 /* hebergements */
